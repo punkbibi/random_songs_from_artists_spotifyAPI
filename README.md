@@ -1,4 +1,25 @@
-python -m venv venv
-source venv/bin/activate  # On Linux/Mac
-venv\Scripts\activate     # On Windows
-pip install -r requirements.txt
+
+
+# Setting Up the Virtual Environment
+
+Follow these steps to set up and activate the virtual environment for this project:
+
+1. **Create a Virtual Environment:**
+   ```bash
+   python -m venv venv
+
+## Activate the Virtual Environment:
+
+On Linux/Mac:
+
+    source venv/bin/activate
+
+On Windows:
+
+    venv\Scripts\activate
+
+### Install Dependencies:
+
+    pip install -r requirements.txt
+
+Now you're ready to work on the project with all required dependencies installed!
