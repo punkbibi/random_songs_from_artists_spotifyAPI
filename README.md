@@ -27,6 +27,6 @@ Now you're ready to work on the project with all required dependencies installed
 
 here is the link:
 
-(https://sandro19.pythonanywhere.com)
+[https://sandro19.pythonanywhere.com]
 
 warning: web site will work till 14th march
