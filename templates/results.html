@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Song Search Results</title>
+  <style>
+    body {
+      font-family: sans-serif; /* Use a more modern default font */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("path/to/background-image.jpg"); /* Add a background image */
+      background-size: cover; /* Ensure the image fills the viewport */
+      background-position: center; /* Center the background image */
+      color: #333; /* Set a dark text color for better contrast */
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Softer and more prominent shadow */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2em; /* Increase heading size for emphasis */
+    }
+
+    .song {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: rgba(230, 230, 230, 0.8); /* Light gray background for each song */
+    }
+
+    .song p {
+      margin: 5px 0;
+      font-weight: bold; /* Make song details bolder for clarity */
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px; /* Adjust padding for better button size */
+      background-color: #1DB954; /* Spotify green */
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold; /* Make button text bolder */
+    }
+
+    .back-link:hover {
+      background-color: #169E47; /* Darker green on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Spotify Song Search Results</h1>
+    {% if message %}
+      <p>{{ message }}</p>
+    {% endif %}
+    {% if song %}
+      <div class="song">
+        <p><strong>Song Name:</strong> {{ song.name }}</p>
+        <p><strong>Artist:</strong> {{ song.artist }}</p>
+        <p><strong>URL:</strong> <a href="{{ song.url }}" target="_blank">{{ song.url }}</a></p>
+      </div>
+    {% endif %}
+    <a href="/" class="back-link">Back to Search</a>
+  </div>
+</body>
+</html>
