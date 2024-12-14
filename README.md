@@ -23,3 +23,10 @@ On Windows:
     pip install -r requirements.txt
 
 Now you're ready to work on the project with all required dependencies installed!
+
+
+here is the link:
+
+sandro19.pythonanywhere.com
+
+warning: web site will work till 14th march
